@@ -93,9 +93,7 @@ public class MyCanvasView extends View {
         return true;
     }
 
-    private void touchUp() {
-        mPath.reset();
-    }
+
 
     private void touchMove(float x, float y) {
         float dx = Math.abs(x - mX);
@@ -115,5 +113,8 @@ public class MyCanvasView extends View {
         mX = x;
         mY = y;
 
+    }
+    private void touchUp() {
+        mPath.reset();
     }
 }
